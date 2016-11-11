@@ -36,16 +36,16 @@ class secondViewController: UIViewController {
 
     
     @IBAction func ok(_ sender: Any) {
-        // loop waarin je woorden blijft vragen zolang die nog nodig zijn
+        // Loop waarin je woorden blijft vragen zolang die nog nodig zijn
         if story.isFilledIn() == false {
-            // als de user niks heeft ingevuld dan return
+            // Als de user niks heeft ingevuld dan return
             if dataInputField.text != "" {
-                // add word into placeholders array
+                // Add word into placeholders array
                 story.fillInPlaceholder(word: dataInputField.text!)
                 dataInputField.text = ""
                 dataInputField.placeholder = story.getNextPlaceholder()
                 print(story.getPlaceholderRemainingCount())
-                // pas counter aan en daarbij het label wordsLeft
+                // Pas counter aan en daarbij het label wordsLeft
                 wordsLeft.text = String(story.getPlaceholderRemainingCount()) + " word(s) left"
             }
             else {

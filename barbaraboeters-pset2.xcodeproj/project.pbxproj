@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0078051DD633BF00D0433D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1A0078041DD633BF00D0433D /* README.md */; };
 		1A8605081DD3CEDD00C4D034 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8605071DD3CEDD00C4D034 /* AppDelegate.swift */; };
 		1A86050A1DD3CEDD00C4D034 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8605091DD3CEDD00C4D034 /* ViewController.swift */; };
 		1A86050D1DD3CEDD00C4D034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A86050B1DD3CEDD00C4D034 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A0078041DD633BF00D0433D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		1A8605041DD3CEDD00C4D034 /* barbaraboeters-pset2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "barbaraboeters-pset2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A8605071DD3CEDD00C4D034 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A8605091DD3CEDD00C4D034 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				1A8605211DD5D8D300C4D034 /* madlib2_university.txt */,
 				1A8605221DD5D8D300C4D034 /* madlib3_clothes.txt */,
 				1A8605231DD5D8D300C4D034 /* madlib4_dance.txt */,
+				1A0078041DD633BF00D0433D /* README.md */,
 			);
 			path = "barbaraboeters-pset2";
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				1A86050A1DD3CEDD00C4D034 /* ViewController.swift in Sources */,
 				1A86051E1DD4AEED00C4D034 /* thirdViewController.swift in Sources */,
 				1A8605081DD3CEDD00C4D034 /* AppDelegate.swift in Sources */,
+				1A0078051DD633BF00D0433D /* README.md in Sources */,
 				1A86051A1DD3CF7600C4D034 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +338,7 @@
 				1A8605181DD3CEDD00C4D034 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

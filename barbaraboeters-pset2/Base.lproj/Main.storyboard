@@ -206,23 +206,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Your Mad Lib Story!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zVm-tx-Yey">
-                                <rect key="frame" x="16" y="20" width="343" height="55"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="E8s-Kr-AxV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MUL-df-fIA">
-                                <rect key="frame" x="16" y="83" width="343" height="473"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hv-d0-ZW6">
-                                <rect key="frame" x="75" y="556" width="224" height="45"/>
+                                <rect key="frame" x="75" y="602" width="224" height="45"/>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="lrk-m1-BGW"/>
@@ -237,19 +222,34 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="wb4-ee-RRF"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MUL-df-fIA">
+                                <rect key="frame" x="16" y="129" width="343" height="465"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Your Mad Lib Story!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zVm-tx-Yey">
+                                <rect key="frame" x="16" y="76" width="343" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="E8s-Kr-AxV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zVm-tx-Yey" firstAttribute="top" secondItem="f6Y-M0-a95" secondAttribute="top" constant="20" symbolic="YES" id="EY2-h4-3c3"/>
+                            <constraint firstItem="zVm-tx-Yey" firstAttribute="top" secondItem="f6Y-M0-a95" secondAttribute="top" constant="76" id="EY2-h4-3c3"/>
                             <constraint firstItem="zVm-tx-Yey" firstAttribute="trailing" secondItem="MUL-df-fIA" secondAttribute="trailing" id="FMd-nM-leQ"/>
-                            <constraint firstItem="5hv-d0-ZW6" firstAttribute="top" secondItem="MUL-df-fIA" secondAttribute="bottom" id="G0a-Lv-Hz6"/>
+                            <constraint firstItem="5hv-d0-ZW6" firstAttribute="top" secondItem="MUL-df-fIA" secondAttribute="bottom" constant="8" id="G0a-Lv-Hz6"/>
                             <constraint firstItem="zVm-tx-Yey" firstAttribute="leading" secondItem="f6Y-M0-a95" secondAttribute="leadingMargin" id="NFZ-A1-mCz"/>
                             <constraint firstItem="MUL-df-fIA" firstAttribute="top" secondItem="zVm-tx-Yey" secondAttribute="bottom" constant="8" symbolic="YES" id="WQP-hG-4A7"/>
                             <constraint firstItem="5hv-d0-ZW6" firstAttribute="leading" secondItem="f6Y-M0-a95" secondAttribute="leadingMargin" constant="59" id="bBX-Hh-7d6"/>
                             <constraint firstItem="zVm-tx-Yey" firstAttribute="trailing" secondItem="f6Y-M0-a95" secondAttribute="trailingMargin" id="huO-j0-oJU"/>
                             <constraint firstItem="zVm-tx-Yey" firstAttribute="leading" secondItem="MUL-df-fIA" secondAttribute="leading" id="im4-ta-5x1"/>
                             <constraint firstItem="MUL-df-fIA" firstAttribute="centerX" secondItem="5hv-d0-ZW6" secondAttribute="centerX" id="qIf-nr-mgK"/>
-                            <constraint firstItem="I88-mO-96a" firstAttribute="top" secondItem="5hv-d0-ZW6" secondAttribute="bottom" constant="66" id="tQl-uJ-qHp"/>
+                            <constraint firstItem="I88-mO-96a" firstAttribute="top" secondItem="5hv-d0-ZW6" secondAttribute="bottom" constant="20" id="tQl-uJ-qHp"/>
                         </constraints>
                     </view>
                     <connections>
