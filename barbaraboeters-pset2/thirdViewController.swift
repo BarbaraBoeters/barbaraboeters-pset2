@@ -10,13 +10,22 @@ import UIKit
 
 class thirdViewController: UIViewController {
     
+    var storyUser: String?
+    var story: Story!
+    
+    @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var storyWindow: UITextView!
+    @IBAction func clearStory(_ sender: Any) {
+        if resetButton.isSelected == true {
+            story.clear()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//        if (placeholders != nil) {
-//            print(placeholders)
-//        }
+        storyWindow.text = storyUser
     }
 
     override func didReceiveMemoryWarning() {

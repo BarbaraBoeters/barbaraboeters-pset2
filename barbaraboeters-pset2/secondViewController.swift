@@ -18,6 +18,7 @@ class secondViewController: UIViewController {
         loadStory()
     }
     
+    // Loading the texfile
     func loadStory() {
         if let dir = Bundle.main.path(forResource: "madlib1_tarzan", ofType: "txt") {
             print(dir)
@@ -30,26 +31,29 @@ class secondViewController: UIViewController {
         }
     }
     
-    
     @IBOutlet weak var dataInputField: UITextField!
     @IBOutlet weak var wordsLeft: UILabel!
+
     
     @IBAction func ok(_ sender: Any) {
         // loop waarin je woorden blijft vragen zolang die nog nodig zijn
-        while story.getPlaceholderRemainingCount() != 0 {
+        if story.isFilledIn() == false {
             // als de user niks heeft ingevuld dan return
-            if dataInputField.text == "" {
-                return
-            }
-            else {
+            if dataInputField.text != "" {
                 // add word into placeholders array
                 story.fillInPlaceholder(word: dataInputField.text!)
+                dataInputField.text = ""
+                dataInputField.placeholder = story.getNextPlaceholder()
+                print(story.getPlaceholderRemainingCount())
                 // pas counter aan en daarbij het label wordsLeft
                 wordsLeft.text = String(story.getPlaceholderRemainingCount()) + " word(s) left"
             }
+            else {
+                return
+            }
         }
+        print(story.toString())
     }
-    
 
 
     override func didReceiveMemoryWarning() {
@@ -57,11 +61,11 @@ class secondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
         
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let ThirdViewController = segue.destination as! thirdViewController
-//        
-////        ThirdViewController.placeholders = dataInputField.text!.characters.split{ $0 == " " || $0 == ","}.map(String.init)
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let thirdVC = segue.destination as? thirdViewController {
+            thirdVC.storyUser = story.toString()
+        }
+    }
     
 
     /*
